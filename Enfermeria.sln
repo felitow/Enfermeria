@@ -3,7 +3,31 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.33530.505
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Enfer.Shared", "Enfer.Shared\Enfer.Shared.csproj", "{2EBF6E93-1C6C-4A31-89F4-2A6219134824}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Enfer.API", "Enfer.API\Enfer.API.csproj", "{65DCF838-E3FB-4DAF-A5CC-732D0E01CAD0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Enfer.WEB", "Enfer.WEB\Enfer.WEB.csproj", "{C39CF7C3-4F27-4606-AC4A-0AD8BE8B30B6}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2EBF6E93-1C6C-4A31-89F4-2A6219134824}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2EBF6E93-1C6C-4A31-89F4-2A6219134824}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2EBF6E93-1C6C-4A31-89F4-2A6219134824}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2EBF6E93-1C6C-4A31-89F4-2A6219134824}.Release|Any CPU.Build.0 = Release|Any CPU
+		{65DCF838-E3FB-4DAF-A5CC-732D0E01CAD0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{65DCF838-E3FB-4DAF-A5CC-732D0E01CAD0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{65DCF838-E3FB-4DAF-A5CC-732D0E01CAD0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{65DCF838-E3FB-4DAF-A5CC-732D0E01CAD0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C39CF7C3-4F27-4606-AC4A-0AD8BE8B30B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C39CF7C3-4F27-4606-AC4A-0AD8BE8B30B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C39CF7C3-4F27-4606-AC4A-0AD8BE8B30B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C39CF7C3-4F27-4606-AC4A-0AD8BE8B30B6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
