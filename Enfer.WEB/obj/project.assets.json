@@ -475,6 +475,16 @@
         "build": {
           "buildTransitive/net6.0/System.Text.Json.targets": {}
         }
+      },
+      "Enfer.Shared/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/Enfer.Shared.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Enfer.Shared.dll": {}
+        }
       }
     },
     "net7.0/browser-wasm": {
@@ -944,6 +954,16 @@
         },
         "build": {
           "buildTransitive/net6.0/System.Text.Json.targets": {}
+        }
+      },
+      "Enfer.Shared/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/Enfer.Shared.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Enfer.Shared.dll": {}
         }
       }
     }
@@ -1792,10 +1812,16 @@
         "system.text.json.nuspec",
         "useSharedDesignerContext.txt"
       ]
+    },
+    "Enfer.Shared/1.0.0": {
+      "type": "project",
+      "path": "../Enfer.Shared/Enfer.Shared.csproj",
+      "msbuildProject": "../Enfer.Shared/Enfer.Shared.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net7.0": [
+      "Enfer.Shared >= 1.0.0",
       "Microsoft.AspNetCore.Components.WebAssembly >= 7.0.5",
       "Microsoft.AspNetCore.Components.WebAssembly.DevServer >= 7.0.5"
     ]
@@ -1832,7 +1858,11 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Project\\Enfer.Shared\\Enfer.Shared.csproj": {
+              "projectPath": "C:\\Project\\Enfer.Shared\\Enfer.Shared.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "62Vr3CNy2Ea4hhaoNCDE56d4hCODIiDpb0M/NOGryjg=",
+  "Hash": "KRx17In3Rb3XG5E2Ht1NpAVom9ByathZKxQLojos6vI=",
   "Source": "Enfer.WEB",
   "BasePath": "/",
   "Mode": "Root",
@@ -100,6 +100,40 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\Usuario\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\7.0.5\\runtimes\\browser-wasm\\native\\dotnet.wasm"
+    },
+    {
+      "Identity": "C:\\Project\\Enfer.WEB\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Enfer.Shared.dll",
+      "SourceId": "Enfer.WEB",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Project\\Enfer.WEB\\bin\\Debug\\net7.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Enfer.Shared.dll",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "BlazorWebAssemblyResource",
+      "AssetTraitValue": "runtime",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Project\\Enfer.Shared\\bin\\Debug\\net7.0\\Enfer.Shared.dll"
+    },
+    {
+      "Identity": "C:\\Project\\Enfer.WEB\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Enfer.Shared.pdb",
+      "SourceId": "Enfer.WEB",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Project\\Enfer.WEB\\bin\\Debug\\net7.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Enfer.Shared.pdb",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "BlazorWebAssemblyResource",
+      "AssetTraitValue": "symbol",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Project\\Enfer.Shared\\bin\\Debug\\net7.0\\Enfer.Shared.pdb"
     },
     {
       "Identity": "C:\\Project\\Enfer.WEB\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Enfer.WEB.dll",
@@ -6596,6 +6630,23 @@
       "OriginalItemSpec": "C:\\Project\\Enfer.WEB\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.Forms.dll"
     },
     {
+      "Identity": "C:\\Project\\Enfer.WEB\\obj\\Debug\\net7.0\\build-gz\\XEvD0lrI.gz",
+      "SourceId": "Enfer.WEB",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Project\\Enfer.WEB\\bin\\Debug\\net7.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Enfer.Shared.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "C:\\Project\\Enfer.WEB\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Enfer.Shared.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Project\\Enfer.WEB\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Enfer.Shared.dll"
+    },
+    {
       "Identity": "C:\\Project\\Enfer.WEB\\obj\\Debug\\net7.0\\build-gz\\Xfl5HLGl.gz",
       "SourceId": "Enfer.WEB",
       "SourceType": "Computed",
@@ -6713,6 +6764,23 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Project\\Enfer.WEB\\bin\\Debug\\net7.0\\wwwroot\\_framework\\System.Xml.XmlDocument.dll"
+    },
+    {
+      "Identity": "C:\\Project\\Enfer.WEB\\obj\\Debug\\net7.0\\build-gz\\y7ejabr0.gz",
+      "SourceId": "Enfer.WEB",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Project\\Enfer.WEB\\bin\\Debug\\net7.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Enfer.Shared.pdb.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "C:\\Project\\Enfer.WEB\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Enfer.Shared.pdb",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Project\\Enfer.WEB\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Enfer.Shared.pdb"
     },
     {
       "Identity": "C:\\Project\\Enfer.WEB\\obj\\Debug\\net7.0\\build-gz\\y7FhqKdW.gz",

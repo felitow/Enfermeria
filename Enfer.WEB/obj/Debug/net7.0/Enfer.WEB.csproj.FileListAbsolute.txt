@@ -826,3 +826,11 @@ C:\Project\Enfer.WEB\obj\Debug\net7.0\Enfer.WEB.dll
 C:\Project\Enfer.WEB\obj\Debug\net7.0\refint\Enfer.WEB.dll
 C:\Project\Enfer.WEB\obj\Debug\net7.0\Enfer.WEB.pdb
 C:\Project\Enfer.WEB\obj\Debug\net7.0\ref\Enfer.WEB.dll
+C:\Project\Enfer.WEB\bin\Debug\net7.0\wwwroot\_framework\Enfer.Shared.dll
+C:\Project\Enfer.WEB\bin\Debug\net7.0\wwwroot\_framework\Enfer.Shared.pdb
+C:\Project\Enfer.WEB\bin\Debug\net7.0\wwwroot\_framework\Enfer.Shared.dll.gz
+C:\Project\Enfer.WEB\bin\Debug\net7.0\wwwroot\_framework\Enfer.Shared.pdb.gz
+C:\Project\Enfer.WEB\bin\Debug\net7.0\Enfer.Shared.dll
+C:\Project\Enfer.WEB\bin\Debug\net7.0\Enfer.Shared.pdb
+C:\Project\Enfer.WEB\obj\Debug\net7.0\build-gz\XEvD0lrI.gz
+C:\Project\Enfer.WEB\obj\Debug\net7.0\build-gz\y7ejabr0.gz
