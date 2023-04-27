@@ -10,3 +10,15 @@ C:\Project\Enfer.Shared\obj\Debug\net7.0\Enfer.Shared.dll
 C:\Project\Enfer.Shared\obj\Debug\net7.0\refint\Enfer.Shared.dll
 C:\Project\Enfer.Shared\obj\Debug\net7.0\Enfer.Shared.pdb
 C:\Project\Enfer.Shared\obj\Debug\net7.0\ref\Enfer.Shared.dll
+C:\Proyecto\Enfer.Shared\bin\Debug\net7.0\Enfer.Shared.deps.json
+C:\Proyecto\Enfer.Shared\bin\Debug\net7.0\Enfer.Shared.dll
+C:\Proyecto\Enfer.Shared\bin\Debug\net7.0\Enfer.Shared.pdb
+C:\Proyecto\Enfer.Shared\obj\Debug\net7.0\Enfer.Shared.csproj.AssemblyReference.cache
+C:\Proyecto\Enfer.Shared\obj\Debug\net7.0\Enfer.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Proyecto\Enfer.Shared\obj\Debug\net7.0\Enfer.Shared.AssemblyInfoInputs.cache
+C:\Proyecto\Enfer.Shared\obj\Debug\net7.0\Enfer.Shared.AssemblyInfo.cs
+C:\Proyecto\Enfer.Shared\obj\Debug\net7.0\Enfer.Shared.csproj.CoreCompileInputs.cache
+C:\Proyecto\Enfer.Shared\obj\Debug\net7.0\Enfer.Shared.dll
+C:\Proyecto\Enfer.Shared\obj\Debug\net7.0\refint\Enfer.Shared.dll
+C:\Proyecto\Enfer.Shared\obj\Debug\net7.0\Enfer.Shared.pdb
+C:\Proyecto\Enfer.Shared\obj\Debug\net7.0\ref\Enfer.Shared.dll

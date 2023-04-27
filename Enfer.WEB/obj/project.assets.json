@@ -1827,23 +1827,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Usuario\\.nuget\\packages\\": {},
+    "C:\\Users\\salak301\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Project\\Enfer.WEB\\Enfer.WEB.csproj",
+      "projectUniqueName": "C:\\Proyecto\\Enfer.WEB\\Enfer.WEB.csproj",
       "projectName": "Enfer.WEB",
-      "projectPath": "C:\\Project\\Enfer.WEB\\Enfer.WEB.csproj",
-      "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-      "outputPath": "C:\\Project\\Enfer.WEB\\obj\\",
+      "projectPath": "C:\\Proyecto\\Enfer.WEB\\Enfer.WEB.csproj",
+      "packagesPath": "C:\\Users\\salak301\\.nuget\\packages\\",
+      "outputPath": "C:\\Proyecto\\Enfer.WEB\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\salak301\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -1852,15 +1852,15 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "https://api.nuget.org/v3/index.json": {},
-        "https://www.nuget.org/api/v2/curated-feeds/microsoftdotnet/": {}
+        "C:\\Program Files\\dotnet\\library-packs": {},
+        "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\Project\\Enfer.Shared\\Enfer.Shared.csproj": {
-              "projectPath": "C:\\Project\\Enfer.Shared\\Enfer.Shared.csproj"
+            "C:\\Proyecto\\Enfer.Shared\\Enfer.Shared.csproj": {
+              "projectPath": "C:\\Proyecto\\Enfer.Shared\\Enfer.Shared.csproj"
             }
           }
         }
