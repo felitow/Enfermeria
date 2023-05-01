@@ -9,41 +9,53 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = browser
 build_property.RootNamespace = Enfer.WEB
 build_property.RootNamespace = Enfer.WEB
-build_property.ProjectDir = C:\Proyecto\Enfer.WEB\
+build_property.ProjectDir = C:\Enfermeria\Enfer.WEB\
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Proyecto\Enfer.WEB
+build_property.MSBuildProjectDirectory = C:\Enfermeria\Enfer.WEB
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Proyecto/Enfer.WEB/App.razor]
+[C:/Enfermeria/Enfer.WEB/App.razor]
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Proyecto/Enfer.WEB/Pages/Countries/CountriesIndex.razor]
+[C:/Enfermeria/Enfer.WEB/Pages/Countries/CountriesIndex.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ291bnRyaWVzXENvdW50cmllc0luZGV4LnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Proyecto/Enfer.WEB/Pages/Index.razor]
+[C:/Enfermeria/Enfer.WEB/Pages/Countries/CountryCreate.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ291bnRyaWVzXENvdW50cnlDcmVhdGUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Enfermeria/Enfer.WEB/Pages/Countries/CountryEdit.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ291bnRyaWVzXENvdW50cnlFZGl0LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Enfermeria/Enfer.WEB/Pages/Countries/CountryForm.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ291bnRyaWVzXENvdW50cnlGb3JtLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Enfermeria/Enfer.WEB/Pages/Index.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Proyecto/Enfer.WEB/Shared/GenericList.razor]
+[C:/Enfermeria/Enfer.WEB/Shared/GenericList.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXEdlbmVyaWNMaXN0LnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Proyecto/Enfer.WEB/Shared/SurveyPrompt.razor]
+[C:/Enfermeria/Enfer.WEB/Shared/SurveyPrompt.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFN1cnZleVByb21wdC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Proyecto/Enfer.WEB/_Imports.razor]
+[C:/Enfermeria/Enfer.WEB/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Proyecto/Enfer.WEB/Shared/MainLayout.razor]
+[C:/Enfermeria/Enfer.WEB/Shared/MainLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5MYXlvdXQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-fh87jprzpw
 
-[C:/Proyecto/Enfer.WEB/Shared/NavMenu.razor]
+[C:/Enfermeria/Enfer.WEB/Shared/NavMenu.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE5hdk1lbnUucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-76ydqx5eyl

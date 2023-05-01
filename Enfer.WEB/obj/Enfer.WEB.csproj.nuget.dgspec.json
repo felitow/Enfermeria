@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Proyecto\\Enfer.WEB\\Enfer.WEB.csproj": {}
+    "C:\\Enfermeria\\Enfer.WEB\\Enfer.WEB.csproj": {}
   },
   "projects": {
-    "C:\\Proyecto\\Enfer.Shared\\Enfer.Shared.csproj": {
+    "C:\\Enfermeria\\Enfer.Shared\\Enfer.Shared.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Proyecto\\Enfer.Shared\\Enfer.Shared.csproj",
+        "projectUniqueName": "C:\\Enfermeria\\Enfer.Shared\\Enfer.Shared.csproj",
         "projectName": "Enfer.Shared",
-        "projectPath": "C:\\Proyecto\\Enfer.Shared\\Enfer.Shared.csproj",
-        "packagesPath": "C:\\Users\\salak301\\.nuget\\packages\\",
-        "outputPath": "C:\\Proyecto\\Enfer.Shared\\obj\\",
+        "projectPath": "C:\\Enfermeria\\Enfer.Shared\\Enfer.Shared.csproj",
+        "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
+        "outputPath": "C:\\Enfermeria\\Enfer.Shared\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\salak301\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,8 +26,8 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {},
+          "https://www.nuget.org/api/v2/curated-feeds/microsoftdotnet/": {}
         },
         "frameworks": {
           "net7.0": {
@@ -64,20 +64,20 @@
         }
       }
     },
-    "C:\\Proyecto\\Enfer.WEB\\Enfer.WEB.csproj": {
+    "C:\\Enfermeria\\Enfer.WEB\\Enfer.WEB.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Proyecto\\Enfer.WEB\\Enfer.WEB.csproj",
+        "projectUniqueName": "C:\\Enfermeria\\Enfer.WEB\\Enfer.WEB.csproj",
         "projectName": "Enfer.WEB",
-        "projectPath": "C:\\Proyecto\\Enfer.WEB\\Enfer.WEB.csproj",
-        "packagesPath": "C:\\Users\\salak301\\.nuget\\packages\\",
-        "outputPath": "C:\\Proyecto\\Enfer.WEB\\obj\\",
+        "projectPath": "C:\\Enfermeria\\Enfer.WEB\\Enfer.WEB.csproj",
+        "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
+        "outputPath": "C:\\Enfermeria\\Enfer.WEB\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\salak301\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -86,15 +86,15 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {},
+          "https://www.nuget.org/api/v2/curated-feeds/microsoftdotnet/": {}
         },
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Proyecto\\Enfer.Shared\\Enfer.Shared.csproj": {
-                "projectPath": "C:\\Proyecto\\Enfer.Shared\\Enfer.Shared.csproj"
+              "C:\\Enfermeria\\Enfer.Shared\\Enfer.Shared.csproj": {
+                "projectPath": "C:\\Enfermeria\\Enfer.Shared\\Enfer.Shared.csproj"
               }
             }
           }
@@ -109,6 +109,10 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "dependencies": {
+            "CurrieTechnologies.Razor.SweetAlert2": {
+              "target": "Package",
+              "version": "[5.5.0, )"
+            },
             "Microsoft.AspNetCore.Components.WebAssembly": {
               "target": "Package",
               "version": "[7.0.5, )"

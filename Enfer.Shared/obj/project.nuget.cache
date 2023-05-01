@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "hV31wkEauScs2weWEfr/tc4F8aGXOop/MhYKCTi6do8dz2cC9AvWnlJxgCIJEY5kjW1565WH3tT6N+plpNBWIg==",
+  "dgSpecHash": "wIUmvaNByGJ9vMhhrx8gORMPJLk5T9m2v0B1i6mcMkmd1r0SLsRkuTThwwGkfJHxVallbfHPaK7BcyYsScOxiQ==",
   "success": true,
-  "projectFilePath": "C:\\Proyecto\\Enfer.Shared\\Enfer.Shared.csproj",
+  "projectFilePath": "C:\\Enfermeria\\Enfer.Shared\\Enfer.Shared.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

@@ -11,8 +11,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Enfer.API.Migrations
 {
     [DbContext(typeof(DataContext))]
-    [Migration("20230427141855_PCu")]
-    partial class PCu
+    [Migration("20230501205218_Inicial")]
+    partial class Inicial
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

@@ -1,3 +1,4 @@
+using CurrieTechnologies.Razor.SweetAlert2;
 using Enfer.WEB;
 using Enfer.WEB.Repositories;
 using Microsoft.AspNetCore.Components.Web;
@@ -9,5 +10,6 @@ builder.RootComponents.Add<HeadOutlet>("head::after");
 
 builder.Services.AddScoped(sp => new HttpClient { BaseAddress = new Uri("https://localhost:7161/")});
 builder.Services.AddScoped<IRepository, Repository>();
+builder.Services.AddSweetAlert2();
 
 await builder.Build().RunAsync();
