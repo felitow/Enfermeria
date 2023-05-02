@@ -1,0 +1,35 @@
+﻿@page "/categories/create"
+@using CurrieTechnologies.Razor.SweetAlert2;
+@inject NavigationManager navigationManager
+@inject IRepository repository
+@inject SweetAlertService swal
+
+<h3>Crear Categoria</h3>
+
+<CategoryForm @ref="categoryForm" Category="category" OnValidSubmit="Create" ReturnAction="Return" />
+
+@code {
+    private Category category = new();
+    private CategoryForm? categoryForm;
+
+    private async Task Create()
+    {
+        var httpResponse = await repository.Post("api/categories", category);
+
+        if (httpResponse.Error)
+        {
+            var mensajeError = await httpResponse.GetErrorMessage();
+            await swal.FireAsync("Error", mensajeError, SweetAlertIcon.Error);
+        }
+        else
+        {
+            categoryForm!.FormPostedSuccessfully = true;
+            navigationManager.NavigateTo("categories");
+        }
+    }
+
+    private void Return()
+    {
+        navigationManager.NavigateTo("categories");
+    }
+}

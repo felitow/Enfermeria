@@ -16,6 +16,18 @@ namespace Enfer.API.Data
         {
             await _context.Database.EnsureCreatedAsync();
             await CheckCountriesAsync();
+            await CheckCategoriesAsync();
+        }
+
+        private async Task CheckCategoriesAsync()
+        {
+            if (!_context.Categories.Any())
+            {
+                _context.Categories.Add(new Category { Name = "Sólidos" });
+                _context.Categories.Add(new Category { Name = "Líquidos" });
+            }
+
+            await _context.SaveChangesAsync();
         }
 
         private async Task CheckCountriesAsync()
