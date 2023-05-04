@@ -9,7 +9,7 @@
 <h3>Categorias</h3>
 
 <div class="mb-3">
-    <a class="btn btn-primary" href="/categories/create">Nuevo País</a>
+    <a class="btn btn-primary" href="/categories/create">Nueva Categoria</a>
 </div>
 
 <GenericList MyList="Categories">
@@ -18,7 +18,7 @@
         <table class="table table-striped">
             <thead>
                 <tr>
-                    <th>País</th>
+                    <th>Categoria</th>
                     <th></th>
 
                 </tr>
@@ -75,7 +75,7 @@
             return;
         }
 
-        var responseHTTP = await repository.Delete($"api/countries/{category.Id}");
+        var responseHTTP = await repository.Delete($"api/categories/{category.Id}");
 
         if (responseHTTP.Error)
         {
