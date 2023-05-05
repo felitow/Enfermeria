@@ -2,54 +2,6 @@
   "version": 3,
   "targets": {
     "net7.0": {
-      "BlazorComponentUtilities/1.7.1": {
-        "type": "package",
-        "compile": {
-          "lib/netstandard2.0/BlazorComponentUtilities.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard2.0/BlazorComponentUtilities.dll": {}
-        }
-      },
-      "BlazorStrap/5.1.101": {
-        "type": "package",
-        "dependencies": {
-          "BlazorComponentUtilities": "1.7.1",
-          "Microsoft.AspNetCore.Components.Web": "7.0.4"
-        },
-        "compile": {
-          "lib/net7.0/BlazorStrap.dll": {}
-        },
-        "runtime": {
-          "lib/net7.0/BlazorStrap.dll": {}
-        },
-        "build": {
-          "buildTransitive/BlazorStrap.props": {}
-        },
-        "buildMultiTargeting": {
-          "buildMultiTargeting/BlazorStrap.props": {}
-        }
-      },
-      "BlazorStrap.V5/5.1.101": {
-        "type": "package",
-        "dependencies": {
-          "BlazorComponentUtilities": "1.7.1",
-          "BlazorStrap": "5.1.101",
-          "Microsoft.AspNetCore.Components.Web": "7.0.4"
-        },
-        "compile": {
-          "lib/net7.0/BlazorStrap.V5.dll": {}
-        },
-        "runtime": {
-          "lib/net7.0/BlazorStrap.V5.dll": {}
-        },
-        "build": {
-          "buildTransitive/BlazorStrap.V5.props": {}
-        },
-        "buildMultiTargeting": {
-          "buildMultiTargeting/BlazorStrap.V5.props": {}
-        }
-      },
       "CurrieTechnologies.Razor.SweetAlert2/5.5.0": {
         "type": "package",
         "dependencies": {
@@ -555,54 +507,6 @@
       }
     },
     "net7.0/browser-wasm": {
-      "BlazorComponentUtilities/1.7.1": {
-        "type": "package",
-        "compile": {
-          "lib/netstandard2.0/BlazorComponentUtilities.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard2.0/BlazorComponentUtilities.dll": {}
-        }
-      },
-      "BlazorStrap/5.1.101": {
-        "type": "package",
-        "dependencies": {
-          "BlazorComponentUtilities": "1.7.1",
-          "Microsoft.AspNetCore.Components.Web": "7.0.4"
-        },
-        "compile": {
-          "lib/net7.0/BlazorStrap.dll": {}
-        },
-        "runtime": {
-          "lib/net7.0/BlazorStrap.dll": {}
-        },
-        "build": {
-          "buildTransitive/BlazorStrap.props": {}
-        },
-        "buildMultiTargeting": {
-          "buildMultiTargeting/BlazorStrap.props": {}
-        }
-      },
-      "BlazorStrap.V5/5.1.101": {
-        "type": "package",
-        "dependencies": {
-          "BlazorComponentUtilities": "1.7.1",
-          "BlazorStrap": "5.1.101",
-          "Microsoft.AspNetCore.Components.Web": "7.0.4"
-        },
-        "compile": {
-          "lib/net7.0/BlazorStrap.V5.dll": {}
-        },
-        "runtime": {
-          "lib/net7.0/BlazorStrap.V5.dll": {}
-        },
-        "build": {
-          "buildTransitive/BlazorStrap.V5.props": {}
-        },
-        "buildMultiTargeting": {
-          "buildMultiTargeting/BlazorStrap.V5.props": {}
-        }
-      },
       "CurrieTechnologies.Razor.SweetAlert2/5.5.0": {
         "type": "package",
         "dependencies": {
@@ -1103,61 +1007,6 @@
     }
   },
   "libraries": {
-    "BlazorComponentUtilities/1.7.1": {
-      "sha512": "m73xpJYtSd7tlOowMslyAvWDipW9bOTWJzGnCSQJK9tm4fz6xXQZbAbTDydmV9bxhTrzmJMMRGsAEnSVZjWVjg==",
-      "type": "package",
-      "path": "blazorcomponentutilities/1.7.1",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "LICENSE.txt",
-        "blazor-glove-256.jpg",
-        "blazorcomponentutilities.1.7.1.nupkg.sha512",
-        "blazorcomponentutilities.nuspec",
-        "lib/netstandard2.0/BlazorComponentUtilities.dll"
-      ]
-    },
-    "BlazorStrap/5.1.101": {
-      "sha512": "ux+T0onb5KCiLZ61AKtkejtfvD7E96FbdJLvrp9339F3DmwtAMqhnVhJZy2ngCadT0O7fp7ihn9bJZSO7ZnBYg==",
-      "type": "package",
-      "path": "blazorstrap/5.1.101",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "blazorstrap.5.1.101.nupkg.sha512",
-        "blazorstrap.nuspec",
-        "build/BlazorStrap.props",
-        "build/Microsoft.AspNetCore.StaticWebAssets.props",
-        "buildMultiTargeting/BlazorStrap.props",
-        "buildTransitive/BlazorStrap.props",
-        "lib/net5.0/BlazorStrap.dll",
-        "lib/net6.0/BlazorStrap.dll",
-        "lib/net7.0/BlazorStrap.dll",
-        "staticwebassets/BlazorStrap.bundle.scp.css",
-        "staticwebassets/blazorstrap.js",
-        "staticwebassets/blazorstrap.min.js",
-        "staticwebassets/popper.min.js"
-      ]
-    },
-    "BlazorStrap.V5/5.1.101": {
-      "sha512": "ciBtAHCnn/fjUy/MD/KdxaUEOAnO2K6uOUdazckFUu8LHJ0yDgiRoGdFS7Cu2O+wgjCtWo4MPx5Ufb9mzq21jw==",
-      "type": "package",
-      "path": "blazorstrap.v5/5.1.101",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "blazorstrap.v5.5.1.101.nupkg.sha512",
-        "blazorstrap.v5.nuspec",
-        "build/BlazorStrap.V5.props",
-        "build/Microsoft.AspNetCore.StaticWebAssets.props",
-        "buildMultiTargeting/BlazorStrap.V5.props",
-        "buildTransitive/BlazorStrap.V5.props",
-        "lib/net5.0/BlazorStrap.V5.dll",
-        "lib/net6.0/BlazorStrap.V5.dll",
-        "lib/net7.0/BlazorStrap.V5.dll",
-        "staticwebassets/BlazorStrap.V5.bundle.scp.css"
-      ]
-    },
     "CurrieTechnologies.Razor.SweetAlert2/5.5.0": {
       "sha512": "Mpo8yNWeUcFesm/d0vA2X/4TloKbXUszWo3u4OtDQvo9cj+zYVOIuB/ZKBL+alIMp1FViImU9BjJocwkIRXVWg==",
       "type": "package",
@@ -2064,8 +1913,6 @@
   },
   "projectFileDependencyGroups": {
     "net7.0": [
-      "BlazorStrap >= 5.1.101",
-      "BlazorStrap.V5 >= 5.1.101",
       "CurrieTechnologies.Razor.SweetAlert2 >= 5.5.0",
       "Enfer.Shared >= 1.0.0",
       "Microsoft.AspNetCore.Components.WebAssembly >= 7.0.5",
@@ -2121,14 +1968,6 @@
       "net7.0": {
         "targetAlias": "net7.0",
         "dependencies": {
-          "BlazorStrap": {
-            "target": "Package",
-            "version": "[5.1.101, )"
-          },
-          "BlazorStrap.V5": {
-            "target": "Package",
-            "version": "[5.1.101, )"
-          },
           "CurrieTechnologies.Razor.SweetAlert2": {
             "target": "Package",
             "version": "[5.5.0, )"

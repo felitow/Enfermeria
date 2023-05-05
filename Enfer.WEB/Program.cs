@@ -1,4 +1,3 @@
-using BlazorStrap;
 using CurrieTechnologies.Razor.SweetAlert2;
 using Enfer.WEB;
 using Enfer.WEB.Repositories;
@@ -14,12 +13,11 @@ using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
         builder.RootComponents.Add<HeadOutlet>("head::after");
 
         builder.Services.AddScoped(sp => new HttpClient { BaseAddress = new Uri("https://localhost:7162/") });
-        //builder.Services.AddBootstrapCss();
+        
         builder.Services.AddScoped<IRepository, Repository>();
         builder.Services.AddSweetAlert2();
 
-        //builder.Services.AddBlazorStrap();
-        //builder.Services.AddBootstrapCss();
+        
 
         await builder.Build().RunAsync();
     

@@ -2510,15 +2510,3 @@ C:\Enfermeria\Enfer.WEB\bin\Debug\net7.0\wwwroot\_framework\CurrieTechnologies.R
 C:\Enfermeria\Enfer.WEB\bin\Debug\net7.0\wwwroot\_framework\CurrieTechnologies.Razor.SweetAlert2.dll.gz
 C:\Enfermeria\Enfer.WEB\bin\Debug\net7.0\CurrieTechnologies.Razor.SweetAlert2.dll
 C:\Enfermeria\Enfer.WEB\obj\Debug\net7.0\build-gz\LewW+jiV.gz
-C:\Enfermeria\Enfer.WEB\bin\Debug\net7.0\wwwroot\_framework\BlazorComponentUtilities.dll
-C:\Enfermeria\Enfer.WEB\bin\Debug\net7.0\wwwroot\_framework\BlazorStrap.dll
-C:\Enfermeria\Enfer.WEB\bin\Debug\net7.0\wwwroot\_framework\BlazorComponentUtilities.dll.gz
-C:\Enfermeria\Enfer.WEB\bin\Debug\net7.0\wwwroot\_framework\BlazorStrap.dll.gz
-C:\Enfermeria\Enfer.WEB\bin\Debug\net7.0\BlazorComponentUtilities.dll
-C:\Enfermeria\Enfer.WEB\bin\Debug\net7.0\BlazorStrap.dll
-C:\Enfermeria\Enfer.WEB\obj\Debug\net7.0\build-gz\m4yo2y0G.gz
-C:\Enfermeria\Enfer.WEB\obj\Debug\net7.0\build-gz\sBSkPfth.gz
-C:\Enfermeria\Enfer.WEB\bin\Debug\net7.0\wwwroot\_framework\BlazorStrap.V5.dll
-C:\Enfermeria\Enfer.WEB\bin\Debug\net7.0\wwwroot\_framework\BlazorStrap.V5.dll.gz
-C:\Enfermeria\Enfer.WEB\bin\Debug\net7.0\BlazorStrap.V5.dll
-C:\Enfermeria\Enfer.WEB\obj\Debug\net7.0\build-gz\Ex4f6rSf.gz

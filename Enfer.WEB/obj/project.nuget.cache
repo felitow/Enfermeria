@@ -1,12 +1,9 @@
 {
   "version": 2,
-  "dgSpecHash": "8aH56BFoYvD4tkF4jHqYP02jFYbCCr9JoQsD7j9XbH1+6IA8L3LFMwbH1A+HmiinxxafBImmYFN2oHo2tAfJiw==",
+  "dgSpecHash": "OwF1iTDWYpQzFOlrQvT27OnAeP29zgJz4A/W+xxmyD8o3nQ/AtaM12tWNawqfSgLa9SYXc1JPe8XX/cpnYmzIw==",
   "success": true,
   "projectFilePath": "C:\\Enfermeria\\Enfer.WEB\\Enfer.WEB.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Usuario\\.nuget\\packages\\blazorcomponentutilities\\1.7.1\\blazorcomponentutilities.1.7.1.nupkg.sha512",
-    "C:\\Users\\Usuario\\.nuget\\packages\\blazorstrap\\5.1.101\\blazorstrap.5.1.101.nupkg.sha512",
-    "C:\\Users\\Usuario\\.nuget\\packages\\blazorstrap.v5\\5.1.101\\blazorstrap.v5.5.1.101.nupkg.sha512",
     "C:\\Users\\Usuario\\.nuget\\packages\\currietechnologies.razor.sweetalert2\\5.5.0\\currietechnologies.razor.sweetalert2.5.5.0.nupkg.sha512",
     "C:\\Users\\Usuario\\.nuget\\packages\\microsoft.aspnetcore.authorization\\7.0.5\\microsoft.aspnetcore.authorization.7.0.5.nupkg.sha512",
     "C:\\Users\\Usuario\\.nuget\\packages\\microsoft.aspnetcore.components\\7.0.5\\microsoft.aspnetcore.components.7.0.5.nupkg.sha512",
