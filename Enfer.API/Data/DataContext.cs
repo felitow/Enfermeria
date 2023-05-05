@@ -19,6 +19,14 @@ namespace Enfer.API.Data
 
         public DbSet<Category> Categories { get; set; }
 
+
+        public DbSet<Medicine> Medicines { get; set; }
+
+        public DbSet<MedicineCategory> MedicineCategories { get; set; }
+
+        public DbSet<MedicineImage> MedicineImages { get; set; }
+
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
@@ -28,6 +36,7 @@ namespace Enfer.API.Data
             modelBuilder.Entity<City>().HasIndex("StateId", "Name").IsUnique();
 
             modelBuilder.Entity<Category>().HasIndex(y => y.Name).IsUnique();
+            modelBuilder.Entity<Medicine>().HasIndex(x => x.Name).IsUnique();
         }
     }
 }

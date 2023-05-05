@@ -18,5 +18,11 @@ namespace Enfer.Shared.Entities
         [Required(ErrorMessage = "El campo {0} es obligatorio.")]
         public string Name { get; set; } = null!;
 
+        public ICollection<MedicineCategory>? MedicineCategories { get; set; }
+
+        [Display(Name = "Productos")]
+        public int MedicineCategoriesNumber => MedicineCategories == null ? 0 : MedicineCategories.Count;
+
+
     }
 }
