@@ -1,4 +1,6 @@
 ﻿using Enfer.API.Data;
+using Enfer.API.Helpers;
+using Enfer.Shared.DTOS;
 using Enfer.Shared.Entities;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -14,28 +16,6 @@ namespace Enfer.API.Controllers
         public StatesController(DataContext context)
         {
             _context = context;
-        }
-
-        [HttpGet]
-        public async Task<IActionResult> GetAsync()
-        {
-            return Ok(await _context.States
-                .Include(x => x.Cities)
-                .ToListAsync());
-        }
-
-        [HttpGet("{id:int}")]
-        public async Task<IActionResult> GetAsync(int id)
-        {
-            var state = await _context.States
-                .Include(x => x.Cities)
-                .FirstOrDefaultAsync(x => x.Id == id);
-            if (state == null)
-            {
-                return NotFound();
-            }
-
-            return Ok(state);
         }
 
         [HttpPost]
@@ -61,6 +41,49 @@ namespace Enfer.API.Controllers
                 return BadRequest(exception.Message);
             }
         }
+
+        [HttpGet]
+        public async Task<ActionResult> Get([FromQuery] PaginationDTO pagination)
+        {
+            var queryable = _context.States
+                .Include(x => x.Cities)
+                .Where(x => x.Country!.Id == pagination.Id)
+                .AsQueryable();
+
+            return Ok(await queryable
+                .OrderBy(x => x.Name)
+                .Paginate(pagination)
+                .ToListAsync());
+        }
+
+        [HttpGet("totalPages")]
+        public async Task<ActionResult> GetPages([FromQuery] PaginationDTO pagination)
+        {
+            var queryable = _context.States
+                .Where(x => x.Country!.Id == pagination.Id)
+                .AsQueryable();
+
+            double count = await queryable.CountAsync();
+            double totalPages = Math.Ceiling(count / pagination.RecordsNumber);
+            return Ok(totalPages);
+        }
+
+
+        [HttpGet("{id:int}")]
+        public async Task<IActionResult> GetAsync(int id)
+        {
+            var state = await _context.States
+                .Include(x => x.Cities)
+                .FirstOrDefaultAsync(x => x.Id == id);
+            if (state == null)
+            {
+                return NotFound();
+            }
+
+            return Ok(state);
+        }
+
+        
 
         [HttpPut]
         public async Task<ActionResult> PutAsync(State state)
