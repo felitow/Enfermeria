@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Identity;
 using Enfer.Shared.Entities;
-
+using Enfer.Shared.DTOS;
 
 namespace Enfer.API.Helpers
 {
@@ -16,6 +16,10 @@ namespace Enfer.API.Helpers
         Task AddUserToRoleAsync(User user, string roleName);
 
         Task<bool> IsUserInRoleAsync(User user, string roleName);
+
+        Task<SignInResult> LoginAsync(LoginDTO model);
+
+        Task LogoutAsync();
 
 
     }

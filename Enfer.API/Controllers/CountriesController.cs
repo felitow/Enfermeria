@@ -2,13 +2,20 @@
 using Enfer.API.Helpers;
 using Enfer.Shared.DTOS;
 using Enfer.Shared.Entities;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
 namespace Enfer.API.Controllers
 {
+
+    
+
     [ApiController]
     [Route("/api/countries")]
+
+    [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
     public class CountriesController : ControllerBase
     {
         private readonly DataContext _context;

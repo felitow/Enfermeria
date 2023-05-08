@@ -117,11 +117,20 @@
             url2 = $"api/countries/totalPages?filter={Filter}";
         }
 
+        try
+        {
 
-        var responseHppt = await repository.Get<List<Country>>(url1);
-        var responseHppt2 = await repository.Get<int>(url2);
-        Countries = responseHppt.Response!;
-        totalPages = responseHppt2.Response!;
+            var responseHppt = await repository.Get<List<Country>>(url1);
+            var responseHppt2 = await repository.Get<int>(url2);
+            Countries = responseHppt.Response!;
+            totalPages = responseHppt2.Response!;
+        }
+        catch (Exception ex)
+        {
+
+            await swal.FireAsync("Error", ex.Message, SweetAlertIcon.Error);
+
+        }
     }
 
 

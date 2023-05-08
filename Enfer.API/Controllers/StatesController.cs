@@ -2,13 +2,19 @@
 using Enfer.API.Helpers;
 using Enfer.Shared.DTOS;
 using Enfer.Shared.Entities;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
 namespace Enfer.API.Controllers
 {
+    
+
     [ApiController]
     [Route("/api/states")]
+
+    [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
     public class StatesController : ControllerBase
     {
         private readonly DataContext _context;
