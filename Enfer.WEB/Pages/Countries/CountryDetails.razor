@@ -1,7 +1,9 @@
-﻿@page "/countries/details/{Id:int}"
+﻿@attribute [Authorize(Roles = "Admin")]
+@page "/countries/details/{Id:int}"
 @using CurrieTechnologies.Razor.SweetAlert2;
 @using Enfer.Shared.Entities;
 @using System.Net;
+@using Microsoft.AspNetCore.Authorization;
 @inject IRepository repository
 @inject NavigationManager navigationManager
 @inject SweetAlertService sweetAlertService
