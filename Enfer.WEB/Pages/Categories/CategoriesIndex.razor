@@ -1,5 +1,7 @@
-﻿@page "/categories"
+﻿@attribute [Authorize(Roles = "Admin")]
+@page "/categories"
 @using CurrieTechnologies.Razor.SweetAlert2;
+@using Microsoft.AspNetCore.Authorization;
 
 @inject IRepository repository
 @inject NavigationManager navigationManager

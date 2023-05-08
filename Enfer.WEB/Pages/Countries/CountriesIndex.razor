@@ -1,5 +1,7 @@
-﻿@page "/countries"
+﻿@attribute [Authorize(Roles = "Admin")]
+@page "/countries"
 @using CurrieTechnologies.Razor.SweetAlert2;
+@using Microsoft.AspNetCore.Authorization;
 
 @inject IRepository repository
 @inject NavigationManager navigationManager

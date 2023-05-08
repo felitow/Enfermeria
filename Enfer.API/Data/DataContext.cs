@@ -1,9 +1,10 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Enfer.Shared.Entities;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 
 namespace Enfer.API.Data
 {
-    public class DataContext : DbContext
+    public class DataContext : IdentityDbContext<User>
     {
         public DataContext(DbContextOptions<DataContext> options) : base(options)
         {

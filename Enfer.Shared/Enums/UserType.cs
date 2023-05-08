@@ -11,5 +11,6 @@ namespace Enfer.Shared.Enums
 
         Admin,
         User
+
     }
 }
