@@ -17,6 +17,11 @@ namespace Enfer.WEB.Auth
             new Claim(ClaimTypes.Name, "Carlos"),
             new Claim("LastName", "O"),
             new Claim(ClaimTypes.Email, "oap@yopmail.com"),
+            new Claim(ClaimTypes.Role, "Admin"),
+
+            new Claim(ClaimTypes.Name, "Juan Felipe"),
+            new Claim("LastName", "Blanco Orrego"),
+            new Claim(ClaimTypes.Email, "juanfelipeblancoorrego@gmail.com"),
             new Claim(ClaimTypes.Role, "Admin")
             },
             authenticationType: "test");
