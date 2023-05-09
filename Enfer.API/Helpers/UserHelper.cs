@@ -47,16 +47,7 @@ namespace Enfer.API.Helpers
             }
         }
 
-        public async Task<User> GetUserAsync(string email)
-        {
-            var user = await _context.Users
-            .Include(u => u.City!)
-            .ThenInclude(c => c.State!)
-            .ThenInclude(s => s.Country!)
-            .FirstOrDefaultAsync(u => u.Email! == email);
-            return user!;
-
-        }
+        
 
         public async Task<bool> IsUserInRoleAsync(User user, string roleName)
         {
@@ -72,6 +63,18 @@ namespace Enfer.API.Helpers
         public async Task LogoutAsync()
         {
             await _signInManager.SignOutAsync();
+        }
+
+
+        public async Task<User> GetUserAsync(string email)
+        {
+            var user = await _context.Users
+            .Include(u => u.City!)
+            .ThenInclude(c => c.State!)
+            .ThenInclude(s => s.Country!)
+            .FirstOrDefaultAsync(u => u.Email! == email);
+            return user!;
+
         }
     }
 }

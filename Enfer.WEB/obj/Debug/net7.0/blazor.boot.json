@@ -40,8 +40,13 @@
       "Microsoft.Extensions.Logging.Abstractions.dll": "sha256-7zoKnNaWqWOrjF2eX3dFetJL+I03xqvCzORtFB4Ws08=",
       "Microsoft.Extensions.Options.dll": "sha256-gcHJrSv1wTqvF9SyWTEKcbiShn4mkgfnm9+tRQr4OqY=",
       "Microsoft.Extensions.Primitives.dll": "sha256-q4ruoDSCjV\/QJY9ZkzV6uxvEvZUVrDbyUjU3SSh5SlE=",
+      "Microsoft.IdentityModel.Abstractions.dll": "sha256-z+0amnVikU6ogbfJGHpQ4vTCwOF0eJTRD7yiCy3BAeA=",
+      "Microsoft.IdentityModel.JsonWebTokens.dll": "sha256-XZF5qBoKI0d8Fwa0UYxTPTB2Iug7Y+KvD1KWxR3LnZI=",
+      "Microsoft.IdentityModel.Logging.dll": "sha256-fLvUphlqwCbHjyJll8pFGQQ0n95X+mzOVO\/njHW7LbE=",
+      "Microsoft.IdentityModel.Tokens.dll": "sha256-wOAW7OEv8Aaog0QRKCBNpgz5VZezu8asQZ\/eXdE9gM0=",
       "Microsoft.JSInterop.dll": "sha256-OBt2YgODs1L5bJWrDjUFgcgGMUjDfmFTHCt9t69RxgU=",
       "Microsoft.JSInterop.WebAssembly.dll": "sha256-GH0zLXwtZcak53A9656ZndP15W57wd1W0kLvKDIV+VE=",
+      "System.IdentityModel.Tokens.Jwt.dll": "sha256-wDNyumC39Fqs0dXf5YmZKd210LW+qDjqmp\/HdQw59U4=",
       "System.IO.Pipelines.dll": "sha256-P\/MqD0fCBd5bgTM16JC1QC\/Zz7s+CwViyzmDFkBG4\/c=",
       "Microsoft.CSharp.dll": "sha256-6Y1rN8knL1K5x5lsZ2tEVDND2h4LtDSuVgCg1N8ghkA=",
       "Microsoft.VisualBasic.Core.dll": "sha256-LRJ4hN7opopr3bsogxcz7uyVjh4bNZOdMbVbIIQ9z+8=",
@@ -212,14 +217,14 @@
       "netstandard.dll": "sha256-OYYuPT3JUknj4LdYIa58zF7kDB3tCnLzjCSuhEjtKXM=",
       "System.Private.CoreLib.dll": "sha256-EVS7zPxPV\/41g2mzPwdXtwiigWxI\/SeAHme1IgyD6tc=",
       "Enfer.Shared.dll": "sha256-YTqyAfFJP21iC23loJdUKPzxo91u5bl1FT5ICDt01vs=",
-      "Enfer.WEB.dll": "sha256-bjDOYaDw2Tysb\/0CnRQRsviBFUstpWR9WhqcH34Zwyk="
+      "Enfer.WEB.dll": "sha256-JtvSmZws1ABs9XEPbEeU1E297a1Xn5LNoVkMNL4j\/v8="
     },
     "extensions": null,
     "lazyAssembly": null,
     "libraryInitializers": null,
     "pdb": {
       "Enfer.Shared.pdb": "sha256-e9M92DHjeEi24BbOgeTUIjfDquykdPDBwiJ75BEOplk=",
-      "Enfer.WEB.pdb": "sha256-MtcBjunjxtbd3abQx8C7oDQyqPIwheIGo7gVnal5Wec="
+      "Enfer.WEB.pdb": "sha256-L4jQ4rRE3Z7ub2XwbXUHjlDMwg7kNfW1C8w3A\/gnIcM="
     },
     "runtime": {
       "dotnet.7.0.5.cq3cx3f7yo.js": "sha256-codB25EodaFEP43MDCfMBuKXU4LqurUKnQrpoMIFnPs=",

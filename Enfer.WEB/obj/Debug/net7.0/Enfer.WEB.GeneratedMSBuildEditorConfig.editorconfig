@@ -20,6 +20,18 @@ build_property._RazorSourceGeneratorDebug =
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Enfermeria/Enfer.WEB/Pages/Auth/Login.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXV0aFxMb2dpbi5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Enfermeria/Enfer.WEB/Pages/Auth/Logout.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXV0aFxMb2dvdXQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Enfermeria/Enfer.WEB/Pages/Auth/Register.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXV0aFxSZWdpc3Rlci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Enfermeria/Enfer.WEB/Pages/Categories/CategoriesIndex.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2F0ZWdvcmllc1xDYXRlZ29yaWVzSW5kZXgucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
@@ -86,6 +98,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Enfermeria/Enfer.WEB/Pages/States/StateForm.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU3RhdGVzXFN0YXRlRm9ybS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Enfermeria/Enfer.WEB/Shared/AuthLinks.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXEF1dGhMaW5rcy5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Enfermeria/Enfer.WEB/Shared/GenericList.razor]
