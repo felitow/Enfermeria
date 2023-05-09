@@ -10,12 +10,12 @@ using Microsoft.EntityFrameworkCore;
 namespace Enfer.API.Controllers
 {
 
-    
+    [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
 
     [ApiController]
     [Route("/api/countries")]
 
-    [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
+    
     public class CountriesController : ControllerBase
     {
         private readonly DataContext _context;

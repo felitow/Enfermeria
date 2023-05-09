@@ -9,12 +9,12 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Enfer.API.Controllers
 {
-    
+    [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
 
     [ApiController]
     [Route("/api/states")]
 
-    [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
+   
     public class StatesController : ControllerBase
     {
         private readonly DataContext _context;

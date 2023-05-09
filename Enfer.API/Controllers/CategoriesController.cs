@@ -10,12 +10,12 @@ using Microsoft.EntityFrameworkCore;
 namespace Enfer.API.Controllers
 {
 
-    
+    [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
 
     [ApiController]
     [Route("/api/categories")]
 
-    [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
+    
 
     public class CategoriesController : ControllerBase
     {
