@@ -13,6 +13,16 @@
 <EditForm Model="userDTO" OnValidSubmit="CreteUserAsync">
     <DataAnnotationsValidator />
 
+    <div class="card">
+        <div class="card-header">
+            <span>
+                <i class="oi oi-person" /> Registrar Nuevo  Usuario
+                <button class="btn btn-sm btn-primary float-end" type="submit"><i class="oi oi-check" /> Registrar</button>
+            </span>
+        </div>
+        <div class="card-body">
+
+
     <div class="row">
         <div class="col-6">
             <div class="mb-3">
@@ -83,9 +93,17 @@
                     <ValidationMessage For="@(() => userDTO.PasswordConfirm)" />
                 </div>
             </div>
+
+                    <div class="mb-3">
+                        <InputImg Label="Foto" ImageSelected="ImageSelected" ImageURL="@imageUrl" />
+                    </div>
+
+
         </div>
     </div>
-    <button class="btn btn-primary" type="submit">Registrar</button>
+        </div>
+    </div>
+
 </EditForm>
 
 @code {
@@ -94,11 +112,27 @@
     private List<Country>? countries;
     private List<State>? states;
     private List<City>? cities;
+    private string? imageUrl;
 
     protected override async Task OnInitializedAsync()
     {
         await LoadCountriesAsync();
+
+        if (!string.IsNullOrEmpty(userDTO.Photo))
+        {
+            imageUrl = userDTO.Photo;
+            userDTO.Photo = null;
+        }
+
+
     }
+
+    private void ImageSelected(string imagenBase64)
+    {
+        userDTO.Photo = imagenBase64;
+        imageUrl = null;
+    }
+
 
     private async Task CountryChangedAsync(ChangeEventArgs e)
     {
