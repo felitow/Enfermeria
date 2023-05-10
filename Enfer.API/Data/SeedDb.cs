@@ -25,12 +25,13 @@ namespace Enfer.API.Data
 
         public async Task SeedAsync()
         {
-            //await _context.Database.EnsureCreatedAsync();
-            await CheckCountriesAsync();
-            await CheckCategoriesAsync();
+            await _context.Database.EnsureCreatedAsync();
 
-            //await CheckRolesAsync();
-            //await CheckUserAsync("1", "Juanito", "White", "eso@yopmail.com", "300445555", "cosa", UserType.Admin);
+            //await CheckCountriesAsync();
+            //await CheckCategoriesAsync();
+
+            await CheckRolesAsync();
+            await CheckUserAsync("1", "Juanito", "White", "eso@yopmail.com", "300445555", "cosa", UserType.Admin);
 
         }
 
@@ -138,8 +139,7 @@ namespace Enfer.API.Data
                     }
                 }
             }
-
         }
 
-        }
+    }
     }
