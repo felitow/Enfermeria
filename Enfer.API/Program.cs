@@ -1,5 +1,6 @@
 using Enfer.API.Data;
 using Enfer.API.Helpers;
+using Enfer.API.Services;
 using Enfer.Shared.Entities;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
@@ -62,6 +63,8 @@ builder.Services.AddSwaggerGen(c =>
 
 builder.Services.AddDbContext<DataContext>(x => x.UseSqlServer("name=DefaultConnection"));
 builder.Services.AddTransient<SeedDb>();
+
+builder.Services.AddScoped<IApiService, ApiService>();
 
 
 builder.Services.AddIdentity<User, IdentityRole>(x =>

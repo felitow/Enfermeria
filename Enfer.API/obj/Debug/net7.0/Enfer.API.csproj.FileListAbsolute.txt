@@ -239,3 +239,4 @@ C:\Enfermeria\Enfer.API\bin\Debug\net7.0\Microsoft.Extensions.Identity.Core.dll
 C:\Enfermeria\Enfer.API\bin\Debug\net7.0\Microsoft.Extensions.Identity.Stores.dll
 C:\Enfermeria\Enfer.API\bin\Debug\net7.0\Microsoft.Extensions.Options.dll
 C:\Enfermeria\Enfer.API\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Enfermeria\Enfer.API\bin\Debug\net7.0\Newtonsoft.Json.dll

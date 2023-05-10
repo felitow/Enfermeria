@@ -2578,3 +2578,7 @@ C:\Enfermeria\Enfer.WEB\obj\Debug\net7.0\build-gz\aGiOc5Xs.gz
 C:\Enfermeria\Enfer.WEB\obj\Debug\net7.0\build-gz\uq0lUGxL.gz
 C:\Enfermeria\Enfer.WEB\obj\Debug\net7.0\build-gz\zXASXvns.gz
 C:\Enfermeria\Enfer.WEB\obj\Debug\net7.0\build-gz\XumnBHJI.gz
+C:\Enfermeria\Enfer.WEB\bin\Debug\net7.0\wwwroot\_framework\Newtonsoft.Json.dll
+C:\Enfermeria\Enfer.WEB\bin\Debug\net7.0\wwwroot\_framework\Newtonsoft.Json.dll.gz
+C:\Enfermeria\Enfer.WEB\bin\Debug\net7.0\Newtonsoft.Json.dll
+C:\Enfermeria\Enfer.WEB\obj\Debug\net7.0\build-gz\+7trt7yr.gz

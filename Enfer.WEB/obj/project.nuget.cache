@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "HO5gxmqDPPw8CDZHoWznAU2YefQ5sKNJ/aqHYLvW/3d/FjWib/5zvVsaRNziAS80wzU4FgxPFCgPMsNAHG/fRg==",
+  "dgSpecHash": "seTmkIL1RZmfVgzCi1wT6HxuoHAxeaRLqHledwT/51eB621bkt1KmMknCfX+u4DHn+c9ZwxS1kCeHlfigc4zeA==",
   "success": true,
   "projectFilePath": "C:\\Enfermeria\\Enfer.WEB\\Enfer.WEB.csproj",
   "expectedPackageFiles": [
@@ -49,6 +49,7 @@
     "C:\\Users\\Usuario\\.nuget\\packages\\microsoft.jsinterop.webassembly\\7.0.5\\microsoft.jsinterop.webassembly.7.0.5.nupkg.sha512",
     "C:\\Users\\Usuario\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\Usuario\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
+    "C:\\Users\\Usuario\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
     "C:\\Users\\Usuario\\.nuget\\packages\\runtime.any.system.runtime\\4.3.0\\runtime.any.system.runtime.4.3.0.nupkg.sha512",
     "C:\\Users\\Usuario\\.nuget\\packages\\runtime.any.system.text.encoding\\4.3.0\\runtime.any.system.text.encoding.4.3.0.nupkg.sha512",
     "C:\\Users\\Usuario\\.nuget\\packages\\system.identitymodel.tokens.jwt\\6.30.0\\system.identitymodel.tokens.jwt.6.30.0.nupkg.sha512",
