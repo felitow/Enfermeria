@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "iWyecT7tdIe36VhXzPQvSE5EioUOcIajYlLBZfVFUu8=",
+  "Hash": "gh2fkc6O0PURLddhw3po+1wj4txGWrh6C/CQa8/Q3vI=",
   "Source": "Enfer.WEB",
   "BasePath": "/",
   "Mode": "Root",
@@ -7886,6 +7886,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\sample-data\\weather.json"
+    },
+    {
+      "Identity": "C:\\Enfermeria\\Enfer.WEB\\wwwroot\\StylesEnfer.css",
+      "SourceId": "Enfer.WEB",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Enfermeria\\Enfer.WEB\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "StylesEnfer.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\StylesEnfer.css"
     },
     {
       "Identity": "C:\\Users\\Usuario\\.nuget\\packages\\currietechnologies.razor.sweetalert2\\5.5.0\\staticwebassets\\bootstrap4Theme.css",

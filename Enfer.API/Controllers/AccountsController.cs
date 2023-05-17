@@ -6,6 +6,8 @@ using Enfer.Shared.Entities;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Authorization;
 
 namespace Enfer.API.Controllers
 {
@@ -80,5 +82,54 @@ namespace Enfer.API.Controllers
                 Expiration = expiration
             };
         }
+
+        //[HttpPut]
+        //[Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
+        //public async Task<ActionResult> Put(User user)
+        //{
+        //    try
+        //    {
+        //        if (!string.IsNullOrEmpty(user.Photo))
+        //        {
+        //            var photoUser = Convert.FromBase64String(user.Photo);
+        //            user.Photo = await _fileStorage.SaveFileAsync(photoUser, ".jpg", _container);
+        //        }
+
+        //        var currentUser = await _userHelper.GetUserAsync(user.Email!);
+        //        if (currentUser == null)
+        //        {
+        //            return NotFound();
+        //        }
+
+        //        currentUser.Document = user.Document;
+        //        currentUser.FirstName = user.FirstName;
+        //        currentUser.LastName = user.LastName;
+        //        currentUser.Address = user.Address;
+        //        currentUser.PhoneNumber = user.PhoneNumber;
+        //        currentUser.Photo = !string.IsNullOrEmpty(user.Photo) && user.Photo != currentUser.Photo ? user.Photo : currentUser.Photo;
+        //        currentUser.CityId = user.CityId;
+
+        //        var result = await _userHelper.UpdateUserAsync(currentUser);
+        //        if (result.Succeeded)
+        //        {
+        //            return NoContent();
+        //        }
+
+        //        return BadRequest(result.Errors.FirstOrDefault());
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        return BadRequest(ex.Message);
+        //    }
+        //}
+
+        //[HttpGet]
+        //[Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
+        //public async Task<ActionResult> Get()
+        //{
+        //    return Ok(await _userHelper.GetUserAsync(User.Identity!.Name!));
+        //}
+
+
     }
 }

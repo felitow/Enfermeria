@@ -23,6 +23,54 @@
         <div class="card-body">
 
 
+            <div class="row">
+                <div class="col-6">
+                    <div class="mb-3">
+                        <label>Nombres:</label>
+                        <div>
+                            <InputText class="form-control" @bind-Value="@userDTO.FirstName" />
+                            <ValidationMessage For="@(() => userDTO.FirstName)" />
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label>Apellidos:</label>
+                        <div>
+                            <InputText class="form-control" @bind-Value="@userDTO.LastName" />
+                            <ValidationMessage For="@(() => userDTO.LastName)" />
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label>Documento:</label>
+                        <div>
+                            <InputText class="form-control" @bind-Value="@userDTO.Document" />
+                            <ValidationMessage For="@(() => userDTO.Document)" />
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label>Teléfono:</label>
+                        <div>
+                            <InputText class="form-control" @bind-Value="@userDTO.PhoneNumber" />
+                            <ValidationMessage For="@(() => userDTO.PhoneNumber)" />
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label>Dirección:</label>
+                        <div>
+                            <InputText class="form-control" @bind-Value="@userDTO.Address" />
+                            <ValidationMessage For="@(() => userDTO.Address)" />
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label>Email:</label>
+                        <div>
+                            <InputText class="form-control" @bind-Value="@userDTO.Email" />
+                            <ValidationMessage For="@(() => userDTO.Email)" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
     <div class="row">
         <div class="col-6">
             <div class="mb-3">
