@@ -240,3 +240,6 @@ C:\Enfermeria\Enfer.API\bin\Debug\net7.0\Microsoft.Extensions.Identity.Stores.dl
 C:\Enfermeria\Enfer.API\bin\Debug\net7.0\Microsoft.Extensions.Options.dll
 C:\Enfermeria\Enfer.API\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 C:\Enfermeria\Enfer.API\bin\Debug\net7.0\Newtonsoft.Json.dll
+C:\Enfermeria\Enfer.API\bin\Debug\net7.0\Azure.Storage.Blobs.dll
+C:\Enfermeria\Enfer.API\bin\Debug\net7.0\Azure.Storage.Common.dll
+C:\Enfermeria\Enfer.API\bin\Debug\net7.0\System.IO.Hashing.dll

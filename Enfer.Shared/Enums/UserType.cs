@@ -9,7 +9,6 @@ namespace Enfer.Shared.Enums
     public enum UserType
     {
 
-        Super,
         Admin,
         User
 
