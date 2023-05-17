@@ -20,8 +20,8 @@ build_property._RazorSourceGeneratorDebug =
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Enfermeria/Enfer.WEB/Pages/Auth/EditUser.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXV0aFxFZGl0VXNlci5yYXpvcg==
+[C:/Enfermeria/Enfer.WEB/Pages/Auth/ChangePassword.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXV0aFxDaGFuZ2VQYXNzd29yZC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Enfermeria/Enfer.WEB/Pages/Auth/Login.razor]
@@ -82,6 +82,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Enfermeria/Enfer.WEB/Pages/Countries/CountryForm.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ291bnRyaWVzXENvdW50cnlGb3JtLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Enfermeria/Enfer.WEB/Pages/EditUser.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRWRpdFVzZXIucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Enfermeria/Enfer.WEB/Pages/Index.razor]
