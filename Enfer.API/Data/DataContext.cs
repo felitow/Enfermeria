@@ -16,10 +16,11 @@ namespace Enfer.API.Data
 
         public DbSet<City> Cities { get; set; }
 
-
+        public DbSet<History> Histories { get; set; }
 
         public DbSet<Category> Categories { get; set; }
 
+        public DbSet<Employee> Employees { get; set; }
 
         public DbSet<Medicine> Medicines { get; set; }
 
@@ -36,8 +37,13 @@ namespace Enfer.API.Data
             modelBuilder.Entity<State>().HasIndex("CountryId", "Name").IsUnique();
             modelBuilder.Entity<City>().HasIndex("StateId", "Name").IsUnique();
 
-            modelBuilder.Entity<Category>().HasIndex(y => y.Name).IsUnique();
-            modelBuilder.Entity<Medicine>().HasIndex(x => x.Name).IsUnique();
+            modelBuilder.Entity<Category>().HasIndex(c => c.Name).IsUnique();
+            //modelBuilder.Entity<MedicineCategory>().HasIndex().IsUnique();
+            modelBuilder.Entity<Medicine>().HasIndex(y => y.Name).IsUnique();
+
+
+            modelBuilder.Entity<History>().HasIndex(h => h.NameHistory).IsUnique();
+            modelBuilder.Entity<Employee>().HasIndex(e => e.Document).IsUnique();
         }
     }
 }

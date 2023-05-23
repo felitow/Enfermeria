@@ -1,0 +1,35 @@
+﻿@page "/histories/create"
+@using CurrieTechnologies.Razor.SweetAlert2;
+@inject NavigationManager navigationManager
+@inject IRepository repository
+@inject SweetAlertService swal
+
+<h3>Crear Historia Clínica</h3>
+
+<HistoryForm @ref="historyForm" History="history" OnValidSubmit="Create" ReturnAction="Return" />
+
+@code {
+    private History history = new();
+    private HistoryForm? historyForm;
+
+    private async Task Create()
+    {
+        var httpResponse = await repository.Post("api/histories", history);
+
+        if (httpResponse.Error)
+        {
+            var mensajeError = await httpResponse.GetErrorMessage();
+            await swal.FireAsync("Error", mensajeError, SweetAlertIcon.Error);
+        }
+        else
+        {
+            historyForm!.FormPostedSuccessfully = true;
+            navigationManager.NavigateTo("histories");
+        }
+    }
+
+    private void Return()
+    {
+        navigationManager.NavigateTo("histories");
+    }
+}

@@ -1,0 +1,209 @@
+﻿@*@attribute [Authorize(Roles = "Admin")]*@
+@page "/histories"
+@using CurrieTechnologies.Razor.SweetAlert2;
+@using Microsoft.AspNetCore.Authorization;
+
+@inject IRepository repository
+@inject NavigationManager navigationManager
+@inject SweetAlertService swal
+
+
+<h3>Historias Clínicas</h3>
+
+@*<div class="mb-2" style="display: flex; flex-wrap:wrap; align-items: center;">
+
+    <div>
+        <a class="btn btn-primary" href="/categories/create">Nueva Categoria</a>
+    </div>
+    <div class="mx-2">
+        <input style="width: 400px;" type="text" class="form-control" id="titulo" placeholder="Buscar categoria..." @bind-value="Filter" />
+    </div>
+    <div>
+        <button type="button" class="btn btn-outline-primary" @onclick="ApplyFilterAsync">Filtrar</button>
+        <button type="button" class="btn btn-outline-danger" @onclick="CleanFilterAsync">Limpiar</button>
+    </div>
+
+</div>
+
+
+<Pagination CurrentPage="currentPage"
+            TotalPages="totalPages"
+            SelectedPage="SelectedPage" />*@
+
+@if (Histories is null)
+{
+    <div class="spinner" />
+}
+else
+{
+
+    <GenericList MyList="Histories">
+
+        <Body>
+
+            <div class="card">
+                <div class="card-header">
+                    <span>
+                        <i class="oi oi-globe"></i> Historias Clínicas
+                        <a class="btn btn-sm btn-primary float-end" href="/histories/create"><i class="oi oi-plus"></i> Adicionar Historia Clínica</a>
+                    </span>
+                </div>
+            </div>
+
+            <div class="card-body">
+                <div class="mb-2" style="display: flex; flex-wrap:wrap; align-items: center;">
+                    <div>
+                        <input style="width: 400px;" type="text" class="form-control" id="titulo" placeholder="Buscar historia..." @bind-value="Filter" />
+                    </div>
+                    <div class="mx-1">
+                        <button type="button" class="btn btn-outline-primary" @onclick="ApplyFilterAsync"><i class="oi oi-layers" /> Filtrar</button>
+                        <button type="button" class="btn btn-outline-danger" @onclick="CleanFilterAsync"><i class="oi oi-ban" /> Limpiar</button>
+                    </div>
+                </div>
+            </div>
+
+            <Pagination CurrentPage="currentPage"
+                        TotalPages="totalPages"
+                        SelectedPage="SelectedPage" />
+
+
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Nombre del Paciente</th>
+                        <th style="width:220px">Documento del Paciente</th>
+                        <th style="width:300px"></th>
+
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var history in Histories!)
+                    {
+                        <tr>
+                            <td>
+                                @history.NameHistory
+                            </td>
+
+                            <td>
+                                @history.Document
+                            </td>
+
+                            <td>
+                                <a href="/histories/edit/@history.Id" class="btn btn-warning">Editar</a>
+                                <button class="btn btn-danger" @onclick=@(() => Delete(history))>Borrar</button>
+                            </td>
+
+                        </tr>
+                    }
+                </tbody>
+            </table>
+
+        </Body>
+
+    </GenericList>
+}
+
+@code {
+    public List<History>? Histories { get; set; }
+    private int currentPage = 1;
+    private int totalPages;
+
+    [Parameter]
+    [SupplyParameterFromQuery]
+    public string Page { get; set; } = "";
+
+    [Parameter]
+    [SupplyParameterFromQuery]
+    public string Filter { get; set; } = "";
+
+    protected async override Task OnInitializedAsync()
+    {
+        await Load();
+    }
+
+
+    private async Task SelectedPage(int page)
+    {
+        currentPage = page;
+        await Load(page);
+    }
+
+
+    private async Task Load(int page = 1)
+    {
+        if (!string.IsNullOrWhiteSpace(Page))
+        {
+            page = Convert.ToInt32(Page);
+        }
+
+        string url1 = string.Empty;
+        string url2 = string.Empty;
+
+        if (string.IsNullOrEmpty(Filter))
+        {
+            url1 = $"api/histories?page={page}";
+            url2 = $"api/histories/totalPages";
+        }
+        else
+        {
+            url1 = $"api/histories?page={page}&filter={Filter}";
+            url2 = $"api/histories/totalPages?filter={Filter}";
+        }
+
+
+        var responseHppt = await repository.Get<List<History>>(url1);
+        var responseHppt2 = await repository.Get<int>(url2);
+        Histories = responseHppt.Response!;
+        totalPages = responseHppt2.Response!;
+    }
+
+    private async Task Delete(History history)
+    {
+        var result = await swal.FireAsync(new SweetAlertOptions
+            {
+                Title = "Confirmación",
+                Text = "¿Esta seguro que quieres borrar el registro?",
+                Icon = SweetAlertIcon.Question,
+                ShowCancelButton = true
+            });
+
+        var confirm = string.IsNullOrEmpty(result.Value);
+
+        if (confirm)
+        {
+            return;
+        }
+
+        var responseHTTP = await repository.Delete($"api/histories/{history.Id}");
+
+        if (responseHTTP.Error)
+        {
+            if (responseHTTP.HttpResponseMessage.StatusCode == System.Net.HttpStatusCode.NotFound)
+            {
+                navigationManager.NavigateTo("/");
+            }
+            else
+            {
+                var mensajeError = await responseHTTP.GetErrorMessage();
+                await swal.FireAsync("Error", mensajeError, SweetAlertIcon.Error);
+            }
+        }
+        else
+        {
+            await Load();
+        }
+    }
+
+    private async Task CleanFilterAsync()
+    {
+        Filter = string.Empty;
+        await ApplyFilterAsync();
+    }
+
+    private async Task ApplyFilterAsync()
+    {
+        int page = 1;
+        await Load(page);
+        await SelectedPage(page);
+    }
+}

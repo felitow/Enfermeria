@@ -28,7 +28,10 @@ namespace Enfer.API.Data
             await _context.Database.EnsureCreatedAsync();
 
             //await CheckCountriesAsync();
-            //await CheckCategoriesAsync();
+            await CheckCategoriesAsync();
+
+            await CheckHistoriesAsync();
+            await CheckEmployeesAsync();
 
             await CheckRolesAsync();
             await CheckUserAsync("1", "Juanito", "White", "eso@yopmail.com", "300445555", "cosa", UserType.Admin);
@@ -67,7 +70,42 @@ namespace Enfer.API.Data
             await _userHelper.CheckRoleAsync(UserType.User.ToString());
         }
 
+        private async Task CheckHistoriesAsync()
+        {
 
+            if (!_context.Employees.Any())
+            {
+                _context.Employees.Add(new Employee {
+                    
+                    Name = "Juana",
+                    LastName = "De arco",
+                    Document = "103256",
+                    Age = "52",
+                    Address = "allá"
+                });
+
+                await _context.SaveChangesAsync();
+            }
+        }
+
+        private async Task CheckEmployeesAsync()
+        {
+
+            if (!_context.Histories.Any())
+            {
+                _context.Histories.Add(new History
+                {
+
+                    NameHistory = "Sólidos",
+                    Notes = "Hola como estás",
+                    Description = "Paciente enfemermo",
+                    NamePacient = "Arturo Calle Simón",
+                    Document = "1033486369"
+                });
+
+                await _context.SaveChangesAsync();
+            }
+        }
 
 
 
@@ -77,9 +115,10 @@ namespace Enfer.API.Data
             {
                 _context.Categories.Add(new Category { Name = "Sólidos" });
                 _context.Categories.Add(new Category { Name = "Líquidos" });
-            }
 
-            await _context.SaveChangesAsync();
+
+                await _context.SaveChangesAsync();
+            }
         }
 
         private async Task CheckCountriesAsync()
@@ -140,6 +179,9 @@ namespace Enfer.API.Data
                 }
             }
         }
+
+
+
 
     }
     }

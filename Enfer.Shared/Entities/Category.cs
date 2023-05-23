@@ -20,9 +20,5 @@ namespace Enfer.Shared.Entities
 
         public ICollection<MedicineCategory>? MedicineCategories { get; set; }
 
-        [Display(Name = "Productos")]
-        public int MedicineCategoriesNumber => MedicineCategories == null ? 0 : MedicineCategories.Count;
-
-
     }
 }

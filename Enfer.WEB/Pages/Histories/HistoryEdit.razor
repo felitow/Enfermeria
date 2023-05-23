@@ -1,0 +1,67 @@
+﻿@page "/histories/edit/{Id:int}"
+@using CurrieTechnologies.Razor.SweetAlert2;
+@inject NavigationManager navigationManager
+@inject IRepository repository
+@inject SweetAlertService swal
+
+<h3>Editar Historia Clínica</h3>
+
+@if (history is null)
+{
+    <p>Cargando...</p>
+}
+else
+{
+    <HistoryForm @ref="historyForm" History="history" OnValidSubmit="Edit" ReturnAction="Return" />
+}
+
+@code {
+    private History? history;
+    private HistoryForm? historyForm;
+
+    [Parameter]
+    public int Id { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        var responseHTTP = await repository.Get<History>($"api/histories/{Id}");
+
+        if (responseHTTP.Error)
+        {
+            if (responseHTTP.HttpResponseMessage.StatusCode == System.Net.HttpStatusCode.NotFound)
+            {
+                navigationManager.NavigateTo("histories");
+            }
+            else
+            {
+                var messageError = await responseHTTP.GetErrorMessage();
+                await swal.FireAsync("Error", messageError, SweetAlertIcon.Error);
+            }
+        }
+        else
+        {
+            history = responseHTTP.Response;
+        }
+    }
+
+    private async Task Edit()
+    {
+        var responseHTTP = await repository.Put("api/histories", history);
+
+        if (responseHTTP.Error)
+        {
+            var mensajeError = await responseHTTP.GetErrorMessage();
+            await swal.FireAsync("Error", mensajeError, SweetAlertIcon.Error);
+        }
+        else
+        {
+            historyForm!.FormPostedSuccessfully = true;
+            navigationManager.NavigateTo("histories");
+        }
+    }
+
+    private void Return()
+    {
+        navigationManager.NavigateTo("histories");
+    }
+}

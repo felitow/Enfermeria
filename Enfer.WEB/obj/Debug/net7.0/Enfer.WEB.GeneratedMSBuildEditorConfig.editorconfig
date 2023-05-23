@@ -88,6 +88,38 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRWRpdFVzZXIucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Enfermeria/Enfer.WEB/Pages/Employees/EmployeeCreate.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRW1wbG95ZWVzXEVtcGxveWVlQ3JlYXRlLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Enfermeria/Enfer.WEB/Pages/Employees/EmployeeEdit.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRW1wbG95ZWVzXEVtcGxveWVlRWRpdC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Enfermeria/Enfer.WEB/Pages/Employees/EmployeeForm.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRW1wbG95ZWVzXEVtcGxveWVlRm9ybS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Enfermeria/Enfer.WEB/Pages/Employees/EmployeesIndex.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRW1wbG95ZWVzXEVtcGxveWVlc0luZGV4LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Enfermeria/Enfer.WEB/Pages/Histories/HistoriesIndex.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSGlzdG9yaWVzXEhpc3Rvcmllc0luZGV4LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Enfermeria/Enfer.WEB/Pages/Histories/HistoryCreate.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSGlzdG9yaWVzXEhpc3RvcnlDcmVhdGUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Enfermeria/Enfer.WEB/Pages/Histories/HistoryEdit.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSGlzdG9yaWVzXEhpc3RvcnlFZGl0LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Enfermeria/Enfer.WEB/Pages/Histories/HistoryForm.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSGlzdG9yaWVzXEhpc3RvcnlGb3JtLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Enfermeria/Enfer.WEB/Pages/Index.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 

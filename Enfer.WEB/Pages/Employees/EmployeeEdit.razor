@@ -1,0 +1,67 @@
+﻿@page "/employees/edit/{Id:int}"
+@using CurrieTechnologies.Razor.SweetAlert2;
+@inject NavigationManager navigationManager
+@inject IRepository repository
+@inject SweetAlertService swal
+
+<h3>Editar Empleado</h3>
+
+@if (employee is null)
+{
+    <p>Cargando...</p>
+}
+else
+{
+    <EmployeeForm @ref="employeeForm" Employee="employee" OnValidSubmit="Edit" ReturnAction="Return" />
+}
+
+@code {
+    private Employee? employee;
+    private EmployeeForm? employeeForm;
+
+    [Parameter]
+    public int Id { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        var responseHTTP = await repository.Get<Employee>($"api/employees/{Id}");
+
+        if (responseHTTP.Error)
+        {
+            if (responseHTTP.HttpResponseMessage.StatusCode == System.Net.HttpStatusCode.NotFound)
+            {
+                navigationManager.NavigateTo("employees");
+            }
+            else
+            {
+                var messageError = await responseHTTP.GetErrorMessage();
+                await swal.FireAsync("Error", messageError, SweetAlertIcon.Error);
+            }
+        }
+        else
+        {
+            employee = responseHTTP.Response;
+        }
+    }
+
+    private async Task Edit()
+    {
+        var responseHTTP = await repository.Put("api/employees", employee);
+
+        if (responseHTTP.Error)
+        {
+            var mensajeError = await responseHTTP.GetErrorMessage();
+            await swal.FireAsync("Error", mensajeError, SweetAlertIcon.Error);
+        }
+        else
+        {
+            employeeForm!.FormPostedSuccessfully = true;
+            navigationManager.NavigateTo("employees");
+        }
+    }
+
+    private void Return()
+    {
+        navigationManager.NavigateTo("employees");
+    }
+}
