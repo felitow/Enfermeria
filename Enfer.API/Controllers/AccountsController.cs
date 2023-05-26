@@ -20,13 +20,15 @@ namespace Enfer.API.Controllers
         private readonly IFileStorage _fileStorage;
         private readonly string _container;
 
+        private readonly IMailHelper _mailHelper;
 
-        public AccountsController(IUserHelper userHelper, IConfiguration configuration, IFileStorage fileStorage)
+        public AccountsController(IUserHelper userHelper, IConfiguration configuration, IFileStorage fileStorage, IMailHelper mailHelper)
         {
             _userHelper = userHelper;
             _configuration = configuration;
             _fileStorage = fileStorage;
             _container = "users";
+            this._mailHelper = mailHelper;
         }
 
         [HttpPost("CreateUser")]
@@ -46,24 +48,75 @@ namespace Enfer.API.Controllers
             if (result.Succeeded)
             {
                 await _userHelper.AddUserToRoleAsync(user, user.UserType.ToString());
-                return Ok(BuildToken(user));
+                var myToken = await _userHelper.GenerateEmailConfirmationTokenAsync(user);
+                var tokenLink = Url.Action("ConfirmEmail", "accounts", new
+                {
+                    userid = user.Id,
+                    token = myToken
+                }, HttpContext.Request.Scheme, _configuration["UrlWEB"]);
+
+                var response = _mailHelper.SendMail(user.FullName, user.Email!,
+                    $"EnferCorps- Confirmación de cuenta",
+                    $"<h1>EnferCorp - Confirmación de cuenta</h1>" +
+                    $"<p>Para habilitar el usuario, por favor hacer clic 'Confirmar Email':</p>" +
+                    $"<b><a href ={tokenLink}>Confirmar Email</a></b>");
+
+                if (response.IsSuccess)
+                {
+                    return NoContent();
+                }
+
+                return BadRequest(response.Message);
             }
 
             return BadRequest(result.Errors.FirstOrDefault());
-        }
 
+        }
 
         [HttpPost("Login")]
         public async Task<ActionResult> Login([FromBody] LoginDTO model)
         {
+            
+
             var result = await _userHelper.LoginAsync(model);
+
             if (result.Succeeded)
             {
                 var user = await _userHelper.GetUserAsync(model.Email);
                 return Ok(BuildToken(user));
             }
 
+            if (result.IsLockedOut)
+            {
+                return BadRequest("Ha superado el máximo número de intentos, su cuenta está bloqueada, intente de nuevo en 5 minutos.");
+            }
+
+            if (result.IsNotAllowed)
+            {
+                return BadRequest("El usuario no ha sido habilitado, debes de seguir las instrucciones del correo enviado para poder habilitar el usuario.");
+            }
+
             return BadRequest("Email o contraseña incorrectos.");
+
+        }
+
+        [HttpGet("ConfirmEmail")]
+        public async Task<ActionResult> ConfirmEmailAsync(string userId, string token)
+        {
+            token = token.Replace(" ", "+");
+            var user = await _userHelper.GetUserAsync(new Guid(userId));
+            if (user == null)
+            {
+                return NotFound();
+            }
+
+            var result = await _userHelper.ConfirmEmailAsync(user, token);
+            if (!result.Succeeded)
+            {
+                return BadRequest(result.Errors.FirstOrDefault());
+            }
+
+            return NoContent();
         }
 
         private TokenDTO BuildToken(User user)
@@ -167,6 +220,9 @@ namespace Enfer.API.Controllers
 
             return NoContent();
         }
+
+
+
 
     }
 }
