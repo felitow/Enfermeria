@@ -5,44 +5,50 @@
 
 <EditForm EditContext="editContext" OnValidSubmit="OnValidSubmit">
     <DataAnnotationsValidator />
-    <div class="mb-3">
+
+    <div class="card-body">
+        <div class="row">
+            <div class="col-6">
+                <div class="mb-3">
+                    <label>Ingrese los nombres del empleado:</label>
+                    <div>
+                        <InputText class="form-control" @bind-Value="@Employee.Name" />
+                        <ValidationMessage For="@(() => Employee.Name)" />
+                    </div>
 
 
-        <label>Ingrese los nombres del empleado:</label>
-        <div>
-            <InputText class="form-control" @bind-Value="@Employee.Name" />
-            <ValidationMessage For="@(() => Employee.Name)" />
+                    <label>Ingrese los apellidos del empleado:</label>
+                    <div>
+                        <InputText class="form-control" @bind-Value="@Employee.LastName" />
+                        <ValidationMessage For="@(() => Employee.LastName)" />
+                    </div>
+
+                    <label>Ingrese la edad del empleado:</label>
+                    <div>
+                        <InputText class="form-control" @bind-Value="@Employee.Age" />
+                        <ValidationMessage For="@(() => Employee.Age)" />
+                    </div>
+
+                    <label>Ingrese la dirección del empleado:</label>
+                    <div>
+                        <InputText class="form-control" @bind-Value="@Employee.Address" />
+                        <ValidationMessage For="@(() => Employee.Address)" />
+                    </div>
+
+                    <label>Ingrese el documento del empleado:</label>
+                    <div>
+                        <InputText class="form-control" @bind-Value="@Employee.Document" />
+                        <ValidationMessage For="@(() => Employee.Document)" />
+                    </div>
+
+                </div>
+            </div>
         </div>
-
-
-        <label>Ingrese los apellidos del empleado:</label>
-        <div>
-            <InputText class="form-control" @bind-Value="@Employee.LastName" />
-            <ValidationMessage For="@(() => Employee.LastName)" />
-        </div>
-
-        <label>Ingrese la edad del empleado:</label>
-        <div>
-            <InputText class="form-control" @bind-Value="@Employee.Age" />
-            <ValidationMessage For="@(() => Employee.Age)" />
-        </div>
-
-        <label>Ingrese la dirección del empleado:</label>
-        <div>
-            <InputText class="form-control" @bind-Value="@Employee.Address" />
-            <ValidationMessage For="@(() => Employee.Address)" />
-        </div>
-
-        <label>Ingrese el documento del empleado:</label>
-        <div>
-            <InputText class="form-control" @bind-Value="@Employee.Document" />
-            <ValidationMessage For="@(() => Employee.Document)" />
-        </div>
-
     </div>
 
-    <button class="btn btn-primary" type="submit">Guardar Cambios</button>
-    <button class="btn btn-success" @onclick="ReturnAction">Regresar</button>
+
+            <button class="btn btn-primary" type="submit">Guardar Cambios</button>
+            <button class="btn btn-success" @onclick="ReturnAction">Regresar</button>
 </EditForm>
 
 @code {
