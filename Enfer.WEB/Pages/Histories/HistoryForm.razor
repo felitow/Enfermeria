@@ -6,16 +6,56 @@
 
 <EditForm EditContext="editContext" OnValidSubmit="OnValidSubmit">
     <DataAnnotationsValidator />
-    <div class="mb-3">
-        <label>Historias:</label>
-        <div>
-            <InputText class="form-control" @bind-Value="@History.NameHistory" />
-            <ValidationMessage For="@(() => History.NameHistory)" />
+
+    <div class="card-body">
+        <div class="row">
+            <div class="col-6">
+                <div class="mb-3">
+
+                    <label>Nombre de la historia:</label>
+                    <div>
+                        <InputText class="form-control" @bind-Value="@History.NameHistory" />
+                        <ValidationMessage For="@(() => History.NameHistory)" />
+
+                        <span class="validity"></span>
+                        <p>Copiar el nombre de la enfermedad a la que se le hará la historia clínica</p>
+                    </div>
+
+                    <label>Descripción de la historia:</label>
+                    <div>
+                        <InputTextArea class="form-control" @bind-Value="@History.Description" />
+                        <ValidationMessage For="@(() => History.Description)" />
+
+                        
+                    </div>
+
+                    <label>Notas de enfermería:</label>
+                    <div>
+                        <InputTextArea class="form-control" @bind-Value="@History.Notes" />
+                        <ValidationMessage For="@(() => History.Notes)" />
+
+                        <span class="validity"></span>
+                        <p>Copiar una sugerencia de no ser necesario copiar, ´ninguna´</p>
+                    </div>
+
+                    <label>Nombre del paciente:</label>
+                    <div>
+                        <InputText class="form-control" @bind-Value="@History.NamePacient" />
+                        <ValidationMessage For="@(() => History.NamePacient)" />
+                    </div>
+
+                    <label>Documento del paciente:</label>
+                    <div>
+                        <InputText class="form-control" @bind-Value="@History.Document" />
+                        <ValidationMessage For="@(() => History.Document)" />
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
-    <button class="btn btn-primary" type="submit">Guardar Cambios</button>
-    <button class="btn btn-success" @onclick="ReturnAction">Regresar</button>
+    <button type="submit" class="btn btn-outline-primary">Guardar Cambios</button>
+    <button class="btn btn-outline-success" @onclick="ReturnAction">Regresar</button>
 </EditForm>
 
 @code {
@@ -76,4 +116,3 @@
     }
 }
 
-}
