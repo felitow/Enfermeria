@@ -71,7 +71,8 @@ else
                             <tr>
                                 <th>Nombre del Paciente</th>
                                 <th style="width:220px">Documento del Paciente</th>
-                                <th style="width:300px"></th>
+                                <th style="width:220px">Tipo(s) de enfermedad</th>
+
 
                             </tr>
                         </thead>
@@ -80,12 +81,17 @@ else
                             {
                                 <tr>
                                     <td>
-                                        @history.NameHistory
+                                        @history.NamePacient
                                     </td>
 
                                     <td>
                                         @history.Document
                                     </td>
+
+                                    <td>
+                                        @history.NameHistory
+                                    </td>
+
 
                                     <td>
                                         <a href="/histories/edit/@history.Id" class="btn btn-warning">Editar</a>

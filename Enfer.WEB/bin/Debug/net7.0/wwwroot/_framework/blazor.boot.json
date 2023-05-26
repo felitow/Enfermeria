@@ -218,14 +218,14 @@
       "netstandard.dll": "sha256-OYYuPT3JUknj4LdYIa58zF7kDB3tCnLzjCSuhEjtKXM=",
       "System.Private.CoreLib.dll": "sha256-EVS7zPxPV\/41g2mzPwdXtwiigWxI\/SeAHme1IgyD6tc=",
       "Enfer.Shared.dll": "sha256-qgyJE\/ZvacRoPiF9ZPudrnoRNOcezoYFayd6Xc7z4JM=",
-      "Enfer.WEB.dll": "sha256-J6uDGHcHb1jtp4GMGc4KUG3DjvQiesh+8kIpNlSME58="
+      "Enfer.WEB.dll": "sha256-rDIyy8+gW2+PgYrQfsAfrghqOTRSmQPU3Sr7iIAfwFE="
     },
     "extensions": null,
     "lazyAssembly": null,
     "libraryInitializers": null,
     "pdb": {
       "Enfer.Shared.pdb": "sha256-eZkXFBZ7362G2D8HY9KuljWJUarHlFBMk8KgN85Gjps=",
-      "Enfer.WEB.pdb": "sha256-HE0HfEiFirGuolPqbm6CD\/+Jg+dpt5ZhAXM+1nn6ZmU="
+      "Enfer.WEB.pdb": "sha256-ZD5X3XXRpqXavOy63SfPMBG\/yP8Auy2k\/WF3BmbcULA="
     },
     "runtime": {
       "dotnet.7.0.5.cq3cx3f7yo.js": "sha256-codB25EodaFEP43MDCfMBuKXU4LqurUKnQrpoMIFnPs=",
