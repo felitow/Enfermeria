@@ -28,7 +28,7 @@ namespace Enfer.Shared.Entities
         [MaxLength(500, ErrorMessage = "El campo {0} debe tener máximo {1} caractéres.")]
         public string Notes { get; set; } = null!;
 
-        
+
 
 
         [Display(Name = "Nombre del paciente")]

@@ -1,4 +1,4 @@
-﻿@attribute [Authorize(Roles = "Admin")]
+﻿@attribute [Authorize(Roles = "Admin,User")]
 @page "/categories"
 @using CurrieTechnologies.Razor.SweetAlert2;
 @using Microsoft.AspNetCore.Authorization;
@@ -44,7 +44,7 @@ else
             <div class="card">
                 <div class="card-header">
                     <span>
-                        <i class="oi oi-globe"></i> Categorias
+                        <i class="oi oi-tags"></i> Categorias
                         <a class="btn btn-sm btn-primary float-end" href="/categories/create"><i class="oi oi-plus"></i> Adicionar Categoria</a>
                     </span>
                 </div>

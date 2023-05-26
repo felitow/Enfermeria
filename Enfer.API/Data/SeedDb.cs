@@ -70,7 +70,7 @@ namespace Enfer.API.Data
             await _userHelper.CheckRoleAsync(UserType.User.ToString());
         }
 
-        private async Task CheckHistoriesAsync()
+        private async Task CheckEmployeesAsync()
         {
 
             if (!_context.Employees.Any())
@@ -88,7 +88,7 @@ namespace Enfer.API.Data
             }
         }
 
-        private async Task CheckEmployeesAsync()
+        private async Task CheckHistoriesAsync()
         {
 
             if (!_context.Histories.Any())

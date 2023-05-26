@@ -44,7 +44,7 @@ else
             <div class="card">
                 <div class="card-header">
                     <span>
-                        <i class="oi oi-globe"></i> Historias Clínicas
+                        <i class="oi oi-book"></i> Historias Clínicas
                         <a class="btn btn-sm btn-primary float-end" href="/histories/create"><i class="oi oi-plus"></i> Adicionar Historia Clínica</a>
                     </span>
                 </div>
@@ -92,6 +92,8 @@ else
                                 <a href="/histories/edit/@history.Id" class="btn btn-warning">Editar</a>
                                 <button class="btn btn-danger" @onclick=@(() => Delete(history))>Borrar</button>
                             </td>
+
+
 
                         </tr>
                     }
