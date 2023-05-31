@@ -243,3 +243,6 @@ C:\Enfermeria\Enfer.API\bin\Debug\net7.0\Newtonsoft.Json.dll
 C:\Enfermeria\Enfer.API\bin\Debug\net7.0\Azure.Storage.Blobs.dll
 C:\Enfermeria\Enfer.API\bin\Debug\net7.0\Azure.Storage.Common.dll
 C:\Enfermeria\Enfer.API\bin\Debug\net7.0\System.IO.Hashing.dll
+C:\Enfermeria\Enfer.API\bin\Debug\net7.0\BouncyCastle.Cryptography.dll
+C:\Enfermeria\Enfer.API\bin\Debug\net7.0\MailKit.dll
+C:\Enfermeria\Enfer.API\bin\Debug\net7.0\MimeKit.dll
